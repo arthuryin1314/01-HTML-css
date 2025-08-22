@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    margin: 0 auto;
+}
+.menu{
+    width: 60%;
+    height: 100%;
+    background-color:burlywood;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+h1,h2,P{
+    text-align: center;
+}
+img{
+    display: block;
+    margin: 0 auto;
+}
+.flavor,.price{
+    display: inline-block;
+    width: 49%;
+}
+.flavor{
+    text-align: left;
+}
+.price{
+    text-align: right;
+}
+.center{
+    height: 70%;
+}
+hr{
+    height: 15px;
+    background-color: brown;
+}
+h1{
+    font-size:60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+a:active{
+    color: gray;
+}
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+/* 调整section的间距 */
+.box1, section {
+    margin: 15px 0;
+}
