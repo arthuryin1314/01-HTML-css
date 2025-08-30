@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: auto;
+    width: 80%;
+    background-color: burlywood;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px ;
+}
+
+h1,h2,p{
+    text-align: center;
+}
+.icon-kafei{
+    font-size: 32px;
+}
+a{
+    display: block;
+    text-align: center;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconfont {
+  display: block; /* 使图标成为块级元素 */
+
+  text-align: center; /* 水平居中 */
+  margin: 10px auto; /* 垂直居中（上下10px间距） */
+  color: #5c3a21; /* 可选：设置图标颜色 */
+}
+.box{
+    width: 700px;
+    height: 100%;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 这确保body至少和视口一样高 */
+    margin: 0; /* 移除默认边距 */
+}
+
+article p{
+    margin-top: 10px;
+}
+hr{
+    background-color: brown;
+    height: 10px;
+    border-color: brown;
+}
