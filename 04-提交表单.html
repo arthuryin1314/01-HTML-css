@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交表单</title>
+    <link rel="stylesheet" href="./04-提交表单.css">
+</head>
+<body>
+    <div class="container">
+        <h1>提交表单</h1>
+    <p>Please fill out this form with the required information</p>
+    <main>
+        <form action="https://register-demo.freecodecamp.org" method="post">
+    <section>
+        <label for="firstname">请输入你的姓氏：<input type="text" id="firstname" name="firstname" required></label>
+        <label for="lastname">请输入你的名字：<input type="text" id="lastname" name="lastname" required></label>
+        <label for="email">请输入你的邮箱：<input type="email" id="email" name="email" required></label>
+        <label for="password">请输入你的密码：<input type="password" id="password" name="password" pattern=".{8,}" required></label>
+    </section>
+    <section>
+        <fieldset>
+            <legend>账户类型</legend>
+            <div class="group">
+                <label><input type="radio" name="AccountType" > 个人</label>
+                <label><input type="radio" name="AccountType"> 商业</label>
+                <label><input type="radio" name="AccountType"> 其他</label>
+            </div>  
+        </fieldset>
+    </section>
+    <section>
+        <label for="file">上传文件: <input type="file" id="file" name="file"></label>
+        <label for="age">请输入您的年龄：<input type="number" min="12" max="90" id="age" name="age"></label>
+        <label for="place">你从哪里知道我们的：<select name="place" id="place">
+            <option value="">请选择</option>
+            <option value="friend">朋友介绍</option>
+            <option value="internet">上网</option>
+            <option value="family">家人</option>
+        </select></label>
+        <label for="bio">简单介绍你自己: <textarea name="bio" id="bio" rows="10" cols="60"></textarea></label>
+    </section>
+    </main>
+    <footer>
+        <input type="checkbox" name="confirm"  required>我已经确认完毕
+        <button type="submit">提交</button>
+        <button type="reset" >重置</button>
+    </footer>
+    </div>
+    </form>
+</body>
+</html>

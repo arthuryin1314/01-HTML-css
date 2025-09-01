@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 500px;
+    height: 100vh;
+    background-color: #1b1b32;
+    margin: 0 auto;
+    color: white;
+}
+h1,p{
+    text-align: center;
+    margin-bottom: 10px;
+}
+input[type="text"]{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+input[type="email"]{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+input[type="password"]{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+button{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: 10px;
+}
+fieldset{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+label[type="file"]{
+    width: 100%;
+}
+select,textarea{
+    width: 100%;
+}
+label{
+    display: block;
+}
+legend{
+    text-align: center;
+}
+input[type="file"]{
+    display: block;
+    width: 100%;
+}
+input[type="number"]{
+    display: block;
+    width: 100%;
+}
+.group{
+    display: flex;
+    height: 50px;
+}
