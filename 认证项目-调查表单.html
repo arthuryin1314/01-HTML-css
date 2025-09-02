@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>调查表单</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">调查表单</h1>
+      <p id="description">请认真填写该表单</p>
+      <form action="" method="post" id="survey-form">
+        <section>
+          <label for="name" id="name-label"
+            >请输入你的名字：<input type="text" id="name" name="name-label" placeholder="请输入名字" required 
+          /></label>
+          <label for="email" id="email-label"
+            >请输入你的邮箱：<input type="email" id="email" name="email-label" placeholder="请输入邮箱" required  
+          /></label>
+          <label for="number" id="number-label">请输入你的年龄： <input type="number" name="number-label" id="number" min="12" max="90" placeholder="请输入年龄" required></label>
+        </section>
+        <section>
+            <label for="grade">请输入你的成绩
+                <select name="grade" id="dropdown">
+                    <option value="">请选择</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>你的学院是什么</legend>
+                <input type="radio" id="ocean-institution" name="institution" value="ocean-institution" checked><label for="ocean-institution">海洋学院</label>
+               <input type="radio" id="sport-institution" name="institution" value="sport-institution"> <label for="sport-institution">体育学院</label>
+                <input type="radio" id="buisness-institution" name="institution" value="buisness-institution"><label for="buisness-institution">商学院</label>
+            </fieldset>
+            <fieldset>
+                <legend>你的爱好是什么</legend>
+                <input type="checkbox" id="badminton" name="hobby" value="badminton"><label for="badminton">打羽毛球</label>
+                <input type="checkbox" id="climbing" name="hobby" value="climbing"><label for="climbing">攀岩</label>
+                <input type="checkbox" id="swimming" name="hobby" value="swimming"><label for="swimming">游泳</label>
+                <input type="checkbox" id="other" name="hobby" value="other"><label for="other">其他</label>
+            </fieldset>
+            <label for="bio">额外补充：<textarea name="bio" id="bio" rows="10" cols="60"></textarea></label>
+            <div class="button">
+                <button type="submit" id="submit">提交</button>
+                <button type="reset">重置</button>
+            </div>
+            
+        </section>
+      </form>
+    </div>
+  </body>
+</html>
