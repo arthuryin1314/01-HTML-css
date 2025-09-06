@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    height: 600px;
+    background-color: brown;
+    margin: 0 auto;
+    padding: 12px;
+    border: 2px solid black;
+    filter: blur(2px);
+}
+.box1{
+    width: 400px;
+    height: 180px;
+    background-color: red;
+    margin: 12px auto;
+    border-radius: 20px;
+    transform: rotate(2deg);
+}
+.box2{
+    width: 400px;
+    height: 180px;
+    background-color: blue;
+    margin: 12px auto;
+    border-radius: 20px 12px 20px 12px;
+}
+.box3{
+    width: 400px;
+    height: 180px;
+    background-color: yellow;
+    transform: rotate(-2deg);
+    margin: 12px auto;
+    border-radius: 40px;
+}
