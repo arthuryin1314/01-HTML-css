@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px auto;
+    width: 600px;
+    height:700px;
+    border: 3px solid whitesmoke;
+    padding: 10px;
+
+}
+.title{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.title span:first-of-type{
+    font-size: 2rem;
+}
+.title span:last-of-type{
+    font-size: 3rem;
+}
+.years{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: whitesmoke;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+}
+.year{
+    margin: 0 6px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 3px double black;
+}
+caption{
+    color:cadetblue;
+    text-align: left;
+    margin:0.8rem 0.8rem
+}
+.alone{
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+}
+tr td{
+    text-align: right;
+    vertical-align: top;
+}
+.hover:hover{
+    background-color: cadetblue;
+}
+/* tr.data{
+    background: linear-gradient(90deg,white,gray,whitesmoke);
+} */
+tr.data th .alone {
+  background: transparent !important;
+  color: inherit; /* 确保文字颜色不受影响 */
+}
+.hocer td{
+    text-align: right;
+}
+tr{
+    margin-bottom: 10px;
+}
+.last{
+    text-align: right;
+}
