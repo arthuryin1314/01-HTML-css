@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media(prefers-reduced-motion: no-preference){
+        *{
+            scroll-behavior: smooth;
+        }
+    }
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1b1b32;
+}
+img{
+    aspect-ratio: 35/4 ;
+    width:max(10rem,10vw);
+    background-color: black;
+    margin-left: 5rem ;
+}
+h1{
+    text-align: center;
+    color: orange;
+}
+nav ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+nav>ul>li{
+    list-style-type: none;
+    display: block;
+    margin-right: 5rem;
+}
+li>a{
+    color: bisque;
+    text-decoration: none;
+}
+li>a:hover{
+    background-color: gray;
+}
+footer{
+    background-color:#1b1b32 ;
+    color: white;
+    text-align: center;
+}
+h2{
+    border-bottom: 4px solid #dfdfe2;
+    margin-bottom: 20px;
+}
+.box1,.box2{
+    width: 80%;
+    margin: 0 auto 12px auto;
+}
+.box3{
+    width: 80%;
+    margin: 0 auto 12px auto;
+}
+button{
+    display: block;
+    width: 30%;
+    margin: 10px auto;
+    height: 40px;
+}
+.box1 input{
+    width:30%;
+    height: 20px;
+    margin-bottom: 10px;
+}
+h3::before{
+    content: "Question#";
+}
+h3{
+    margin-bottom: 10px;
+}
+fieldset{
+    height: 5rem;
+    border: none;
+}
+textarea{
+    display: block;
+    width: 100%;
+}
